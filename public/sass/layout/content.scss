@@ -1,0 +1,8 @@
+.l-content {
+  text-align: center;
+  margin: 0 0 em(0) 0;
+  overflow: auto;
+  @media screen and (max-width: em($small-screen-up)) {
+    margin: 0 0 em(230) 0;
+  }
+}

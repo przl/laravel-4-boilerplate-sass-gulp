@@ -1,0 +1,111 @@
+@charset "UTF-8";
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,300,400,600,700);
+
+//----------------------------------------
+//   Base
+//----------------------------------------
+
+// Base color
+$clr-light               : #E9E9E9;
+$clr-error               : #C3546B;
+$clr-success             : #328797;
+$clr-alert               : #D98013;
+$clr-notice              : #329997;
+
+$clr-dark-red			 : #e20613;
+$clr-pink				 : #ec694a;
+$clr-light-red 			 : #e95a0c;
+$clr-orange				 : #ff9900;
+$clr-blue				 : #3e61aa;
+$clr-light-blue			 : #5680b5;
+$clr-green				 : #009933;
+
+$clr-0-darken            : #1C1F26;
+$clr-0                   : tint($clr-0-darken, 40%);
+$clr-0-light             : tint($clr-0-darken, 90%);
+$clr-0-lighten           : tint($clr-0-darken, 98%);
+$clr-0-dark              : tint($clr-0-darken, 20%);
+
+$clr-1                   : #4472B9;
+$clr-1-light             : tint($clr-1, 50%);
+$clr-1-lighten           : tint($clr-1, 85%);
+$clr-1-dark              : shade($clr-1, 15%);
+$clr-1-darken            : shade($clr-1, 30%);
+
+$clr-2                   : #9565C8;
+$clr-2-light             : tint($clr-2, 50%);
+$clr-2-lighten           : tint($clr-2, 85%);
+$clr-2-dark              : shade($clr-2, 15%);
+$clr-2-darken            : shade($clr-2, 30%);
+
+// CSS3
+$rad                     : .3rem;
+$trans                   : all .3s ease-in-out;
+
+// Font
+$base-font-family        : "Open Sans", sans-serif;
+$code-font               : 'Source Code Pro', Consolas, monospace;
+$base-font-size          : 16px;
+$base-font-size-num      : 16;
+$base-line-height        : 22px;
+$base-font-color         : #4D4D4D;
+
+$header-font-family      : $base-font-family;
+$header-line-height      : 1.25em;
+$header-font-color       : $clr-0-darken;
+
+// Background
+$base-background-color   : #1C1F26;
+
+// Link
+$base-link-color         : $clr-1;
+$base-link-color-hover   : $clr-1-darken;
+
+//  Grid
+$wrap-max-width          : em(1000);
+$wrap-min-width          : em(320);
+$gutter-width            : em(20);
+
+// Border color
+$base-border-color       : $clr-0-light;
+
+// Forms
+$form-border-color       : $base-border-color;
+
+/*
+	Darken method has problems when you add the tint method to it
+	this has a issue on github and has not been solved yet.
+	This however works with a static color as below.
+	https                   ://github.com/sass/libsass/issues/726
+*/
+$form-border-color-hover : darken(#1C1F26, 10);
+$form-border-color-focus : $clr-1;
+$form-border-radius      : 0;
+$form-box-shadow         : none;
+$form-box-shadow-focus   : $form-box-shadow, 0 0 5px rgba(darken($form-border-color-focus, 5), 0.7);
+$color-mixin-placeholder : tint($clr-0, 60%);
+$form-font-size          : $base-font-size;
+$form-font-family        : $base-font-family;
+
+// Spacing
+$spacer                  : ($base-line-height * .5);
+$spacer-n                : 0;
+$spacer-s                : $spacer;
+$spacer-m                : $spacer * 2;
+$spacer-l                : $spacer * 3;
+
+// Nav
+$h-nav-small             : em(84);
+$w-nav-small             : em(148);
+
+// Breakpoints (choose unit you prefer)
+$nav-mq                  : em(600); // Only for the nav
+$tiny-screen             : 480;
+$tiny-screen-up          : 481;
+$small-screen            : 768;
+$small-screen-up         : 769;
+$medium-screen           : 991;
+$medium-screen-up        : 992;
+$large-screen            : 1199;
+$extra-large-screen      : 1600;
+$ultra-large-screen      : 1920;

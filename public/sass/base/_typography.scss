@@ -1,0 +1,38 @@
+/* ===========================
+  Typography
+  =========================== */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "museo-sans-rounded", sans-serif !important;
+  font-weight: 100;
+  margin-bottom: em(20);
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: em(48);
+}
+
+h2 {
+  font-size: em(28);
+}
+
+h3 {
+  font-size: em(28);
+}
+
+p.lead {
+  font-size: em(24);
+}
+
+.orange {
+  color: orange;
+}
+
+.light {
+
+}
+
+.bold {
+
+}

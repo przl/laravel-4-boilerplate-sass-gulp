@@ -1,0 +1,26 @@
+// =======================
+// Tools/Functions
+// Thanks to @sutterlity
+// https://github.com/sutter/POPY-Starter-integration-web/blob/master/scss/tools/_functions.scss
+// =======================
+
+// Convert px to em
+@function em($target, $base: $base-font-size-num) {
+    @return ($target/$base)+0em;
+}
+
+// Convert px to rem
+@function rem($target, $base: $base-font-size-num) {
+    @return ($target/$base)+0em;
+}
+
+// Convert em to px
+@function px($target, $context){
+    @return ($target*$context)+0px;
+}
+
+// Can delay ng-animate animations
+@mixin stagger($delay){
+	transition-delay: $delay;
+    animation-delay: $delay;
+}

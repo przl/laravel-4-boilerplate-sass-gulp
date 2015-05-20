@@ -1,0 +1,29 @@
+/* ===========================
+   Master SASS File
+   Includes all the separate SASS files from the SMACSS file folder structure
+   =========================== */
+
+/* Default Settings */
+@import "variables";
+
+
+/* Tools */
+@import "tools/functions";
+
+
+/* Layout */
+@import "layout/header";
+@import "layout/content";
+@import "layout/footer";
+
+/* Modules */
+@import "modules/example";
+
+
+/* Base */
+@import "base/base";
+@import "base/normalize";
+@import "base/typography";
+
+/* Print */
+@import "print";
